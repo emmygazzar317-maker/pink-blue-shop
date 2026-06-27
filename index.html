@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pink & Blue - ???? ???????</title>
+<title>Pink &amp; Blue - متجر الملابس</title>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
@@ -26,7 +26,7 @@ header{position:fixed;width:100%;top:0;z-index:1000;background:rgba(26,26,46,.8)
 .cart:hover{background:var(--g);transform:scale(1.1)}
 .cc{position:absolute;top:-5px;right:-5px;background:var(--a);color:var(--d);font-size:.75rem;font-weight:900;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;animation:pu 2s infinite}
 @keyframes pu{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
-.hero{margin-top:90px;padding:80px 30px 60px;text-align:center}
+.hero{margin-top:90px;padding:120px 30px 80px;text-align:center}
 .badge{display:inline-block;padding:8px 25px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:50px;font-size:.9rem;font-weight:700;color:var(--a);margin-bottom:30px;animation:fd 1s}
 .hero h1{font-size:4rem;font-weight:900;margin-bottom:25px;animation:fu 1s .2s both}
 .gt{background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
@@ -36,12 +36,6 @@ header{position:fixed;width:100%;top:0;z-index:1000;background:rgba(26,26,46,.8)
 .pb:hover{transform:translateY(-5px) scale(1.05);box-shadow:0 15px 40px rgba(255,107,157,.4)}
 @keyframes fu{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fd{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
-.hero-img-section{text-align:center;padding:20px 30px 40px;max-width:1200px;margin:0 auto;animation:fu 1s .8s both}
-.hero-img-container{position:relative;display:inline-block;border-radius:30px;overflow:hidden;box-shadow:0 25px 60px rgba(255,107,157,.3);border:3px solid rgba(255,255,255,.1)}
-.hero-img-container img{width:100%;max-width:800px;height:auto;display:block;border-radius:30px}
-.hero-img-overlay{position:absolute;bottom:0;left:0;right:0;padding:40px 30px;background:linear-gradient(to top,rgba(26,26,46,.9),transparent);text-align:center}
-.hero-img-overlay h2{font-size:2.2rem;font-weight:900;margin-bottom:10px;background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.hero-img-overlay p{font-size:1.1rem;color:rgba(255,255,255,.8)}
 .stats{display:flex;justify-content:center;gap:50px;padding:40px 30px;flex-wrap:wrap}
 .st{text-align:center;padding:20px;background:rgba(255,255,255,.05);border-radius:20px;border:1px solid rgba(255,255,255,.1);min-width:150px;transition:all .3s}
 .st:hover{transform:translateY(-10px);border-color:var(--p);box-shadow:0 10px 30px rgba(255,107,157,.2)}
@@ -62,7 +56,15 @@ header{position:fixed;width:100%;top:0;z-index:1000;background:rgba(26,26,46,.8)
 .badge2{position:absolute;top:20px;right:20px;padding:8px 20px;background:var(--g);color:#fff;font-weight:800;border-radius:20px;font-size:.85rem;box-shadow:0 5px 15px rgba(0,0,0,.2);z-index:2}
 .cinfo{padding:25px}
 .cn{font-size:1.3rem;font-weight:800;margin-bottom:10px}
-.cp{font-size:1.6rem;font-weight:900;background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:20px}
+.cp{font-size:1.6rem;font-weight:900;background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:15px}
+.colors{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap;align-items:center}
+.cl-label{font-size:.85rem;color:rgba(255,255,255,.6);margin-left:5px}
+.color-dot{width:25px;height:25px;border-radius:50%;border:2px solid rgba(255,255,255,.3);cursor:default;transition:all .3s}
+.color-dot:hover{transform:scale(1.2);border-color:#fff}
+.sizes{display:flex;gap:8px;margin-bottom:15px;flex-wrap:wrap;align-items:center}
+.sz-label{font-size:.85rem;color:rgba(255,255,255,.6);margin-left:5px}
+.size-tag{padding:4px 12px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:8px;font-size:.8rem;font-weight:700;color:#fff}
+.shipping-info{display:flex;align-items:center;gap:8px;font-size:.85rem;color:var(--a);margin-bottom:15px;padding:8px 12px;background:rgba(255,217,61,.1);border-radius:10px;border:1px solid rgba(255,217,61,.2)}
 .add{width:100%;padding:15px;border:2px solid rgba(255,255,255,.2);border-radius:15px;background:transparent;color:#fff;font-family:'Cairo',sans-serif;font-size:1.1rem;font-weight:800;cursor:pointer;transition:all .4s}
 .add:hover{background:var(--g);border-color:transparent;transform:scale(1.02);box-shadow:0 10px 30px rgba(255,107,157,.4)}
 .add.added{background:#27ae60;border-color:#27ae60}
@@ -110,9 +112,12 @@ header{position:fixed;width:100%;top:0;z-index:1000;background:rgba(26,26,46,.8)
 .ac h2{margin-bottom:30px;color:#fff;text-align:center;font-size:1.8rem}
 .fg{margin-bottom:25px}
 .fg label{display:block;margin-bottom:10px;font-weight:800;color:rgba(255,255,255,.8)}
-.fg input,.fg select,.fg textarea{width:100%;padding:15px 20px;border:2px solid rgba(255,255,255,.1);border-radius:15px;font-family:'Cairo',sans-serif;font-size:1rem;color:#fff;background:rgba(255,255,255,.05)}
-.fg input:focus,.fg select:focus,.fg textarea:focus{outline:none;border-color:var(--p);background:rgba(255,255,255,.1)}
-.fg textarea{min-height:80px;resize:vertical}
+.fg input,.fg select{width:100%;padding:15px 20px;border:2px solid rgba(255,255,255,.1);border-radius:15px;font-family:'Cairo',sans-serif;font-size:1rem;color:#fff;background:rgba(255,255,255,.05)}
+.fg input:focus,.fg select:focus{outline:none;border-color:var(--p);background:rgba(255,255,255,.1)}
+.color-inputs{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.color-inputs input{width:50px;height:50px;border:2px solid rgba(255,255,255,.2);border-radius:10px;cursor:pointer;padding:0}
+.color-inputs input::-webkit-color-swatch-wrapper{padding:0}
+.color-inputs input::-webkit-color-swatch{border:none;border-radius:8px}
 .sb{width:100%;padding:18px;border:none;border-radius:15px;background:var(--g);color:#fff;font-family:'Cairo',sans-serif;font-size:1.2rem;font-weight:900;cursor:pointer;transition:all .4s}
 .sb:hover{transform:scale(1.02)}
 .toast{position:fixed;bottom:30px;right:30px;background:var(--g);color:#fff;padding:20px 35px;border-radius:20px;font-weight:800;font-size:1.1rem;z-index:4000;transform:translateY(100px);opacity:0;transition:all .5s}
@@ -125,9 +130,18 @@ footer{background:rgba(0,0,0,.3);border-top:1px solid rgba(255,255,255,.1);paddi
 .fp{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font-size:1.2rem;font-weight:700;padding:12px 20px;background:rgba(255,255,255,.05);border-radius:15px;margin-bottom:10px;border:1px solid rgba(255,255,255,.1);transition:all .3s}
 .fp:hover{background:var(--g);border-color:transparent;transform:translateX(-5px)}
 .fb{text-align:center;margin-top:50px;padding-top:25px;border-top:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.4)}
-.cdetails{color:rgba(255,255,255,.6);font-size:.9rem;margin-bottom:10px}
-.cdetails span{display:inline-block;margin-left:8px;padding:3px 10px;background:rgba(255,255,255,.1);border-radius:8px}
-@media(max-width:768px){.hero h1{font-size:2.5rem}.nav{display:none}.cartS{width:100%;left:-100%}.grid{grid-template-columns:1fr}.stats{gap:20px}.phones{flex-direction:column;align-items:center}.hero-img-overlay h2{font-size:1.5rem}}
+.del-btn{position:absolute;top:20px;left:20px;width:35px;height:35px;border-radius:50%;background:rgba(255,71,87,.8);color:#fff;border:none;cursor:pointer;z-index:10;display:flex;align-items:center;justify-content:center;transition:all .3s;font-size:1rem}
+.del-btn:hover{background:#ff4757;transform:scale(1.1)}
+.manage-section{margin-top:30px;padding-top:30px;border-top:1px solid rgba(255,255,255,.1)}
+.manage-section h3{color:var(--a);margin-bottom:20px;font-size:1.3rem}
+.manage-table{width:100%;border-collapse:collapse;margin-top:20px}
+.manage-table th,.manage-table td{padding:12px;text-align:right;border-bottom:1px solid rgba(255,255,255,.1)}
+.manage-table th{background:rgba(255,255,255,.05);font-weight:800;color:var(--a)}
+.manage-table tr:hover{background:rgba(255,255,255,.03)}
+.manage-btn{padding:8px 15px;border-radius:8px;border:none;cursor:pointer;font-family:'Cairo',sans-serif;font-weight:700;transition:all .3s}
+.manage-btn.del{background:rgba(255,71,87,.2);color:#ff4757;border:1px solid rgba(255,71,87,.3)}
+.manage-btn.del:hover{background:#ff4757;color:#fff}
+@media(max-width:768px){.hero h1{font-size:2.5rem}.nav{display:none}.cartS{width:100%;left:-100%}.grid{grid-template-columns:1fr}.stats{gap:20px}.phones{flex-direction:column;align-items:center}}
 ::-webkit-scrollbar{width:10px}
 ::-webkit-scrollbar-track{background:rgba(255,255,255,.05)}
 ::-webkit-scrollbar-thumb{background:var(--g);border-radius:5px}
@@ -136,169 +150,217 @@ footer{background:rgba(0,0,0,.3);border-top:1px solid rgba(255,255,255,.1);paddi
 <body>
 <div class="bg"></div>
 <header><div class="hc">
-<a href="#" class="logo"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=100&h=100&fit=crop" alt="Logo"><span class="lt">Pink & Blue</span></a>
-<ul class="nav"><li><a href="#" onclick="f('men')">?????</a></li><li><a href="#" onclick="f('women')">?????</a></li><li><a href="#" onclick="f('boys')">?????</a></li><li><a href="#" onclick="f('girls')">????</a></li></ul>
+<a href="#" class="logo"><img src="https://via.placeholder.com/55x55/FF6B9D/FFFFFF?text=P" alt="Logo"><span class="lt">Pink &amp; Blue</span></a>
+<ul class="nav"><li><a href="#" onclick="f('men')">رجالي</a></li><li><a href="#" onclick="f('women')">حريمي</a></li><li><a href="#" onclick="f('boys')">أولاد</a></li><li><a href="#" onclick="f('girls')">بنات</a></li></ul>
 <div class="cart" onclick="tc()"><i class="fas fa-shopping-cart"></i><span class="cc" id="cc">0</span></div>
 </div></header>
 
 <div class="login" id="lg"><button class="cl" onclick="cl()"><i class="fas fa-times"></i></button>
 <div class="lbox">
-<h2><i class="fas fa-lock"></i> ????? ???? ??????</h2>
-<p>??? ???? ?????? ????? ????? ????????</p>
-<input type="password" class="lp" id="pw" placeholder="???? ???? ????" onkeypress="if(event.key==='Enter')ck()">
-<button class="lb" onclick="ck()"><i class="fas fa-sign-in-alt"></i> ????</button>
-<div class="lerr" id="er">? ???? ???? ??? ?????!</div>
+<h2><i class="fas fa-lock"></i> تسجيل دخول المالك</h2>
+<p>فقط صاحب المتجر يمكنه إضافة المنتجات</p>
+<input type="password" class="lp" id="pw" placeholder="أدخل كلمة السر" onkeypress="if(event.key==='Enter')ck()">
+<button class="lb" onclick="ck()"><i class="fas fa-sign-in-alt"></i> دخول</button>
+<div class="lerr" id="er">كلمة السر غير صحيحة!</div>
 </div></div>
 
 <section class="hero">
-<div class="badge">? ???? Pink & Blue ??????</div>
-<h1>????? ??? ?? <span class="gt">Pink & Blue</span></h1>
-<p>???? ?????? ????? ??????? ????? ??????? ????? ???????</p>
+<div class="badge">متجر Pink &amp; Blue الرسمي</div>
+<h1>أهلاً بيك في <span class="gt">Pink &amp; Blue</span></h1>
+<p>أفضل تشكيلة ملابس للعائلة بأجود الخامات وأحلى الأسعار</p>
 <div class="phones">
 <a href="tel:01508234015" class="pb"><i class="fas fa-phone"></i> 01508234015</a>
 </div>
 </section>
 
-<section class="hero-img-section">
-<div class="hero-img-container">
-<img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&h=400&fit=crop" alt="Pink & Blue Banner">
-<div class="hero-img-overlay">
-<h2>???? ????? ??????</h2>
-<p>?????? ????? ?? ??????? ??????? ??????? ???????</p>
-</div>
-</div>
-</section>
-
 <div class="stats">
-<div class="st"><div class="sn">500+</div><div class="sl">???? ?????</div></div>
-<div class="st"><div class="sn">1000+</div><div class="sl">???? ????</div></div>
-<div class="st"><div class="sn">24/7</div><div class="sl">???? ???????</div></div>
-<div class="st"><div class="sn">?????</div><div class="sl">????? ?????</div></div>
+<div class="st"><div class="sn">500+</div><div class="sl">منتج متنوع</div></div>
+<div class="st"><div class="sn">1000+</div><div class="sl">عميل سعيد</div></div>
+<div class="st"><div class="sn">24/7</div><div class="sl">خدمة العملاء</div></div>
+<div class="st"><div class="sn">5 نجوم</div><div class="sl">تقييم ممتاز</div></div>
 </div>
 
 <section class="cs" id="products">
-<div class="sh"><h2>???????? ???????</h2><p>???? ?? ???? ????????? ????????? ???????</p></div>
+<div class="sh"><h2>تشكيلتنا المميزة</h2><p>اختر من أحدث الموديلات والتصاميم العصرية</p></div>
 <div class="tabs">
-<button class="tab active" onclick="f('all')">????</button>
-<button class="tab" onclick="f('men')">?????</button>
-<button class="tab" onclick="f('women')">?????</button>
-<button class="tab" onclick="f('boys')">?????</button>
-<button class="tab" onclick="f('girls')">????</button>
+<button class="tab active" onclick="f('all')">الكل</button>
+<button class="tab" onclick="f('men')">رجالي</button>
+<button class="tab" onclick="f('women')">حريمي</button>
+<button class="tab" onclick="f('boys')">أولاد</button>
+<button class="tab" onclick="f('girls')">بنات</button>
 </div>
 <div class="grid" id="grid"></div>
-<div style="text-align:center;margin-top:40px;padding:20px;background:rgba(255,255,255,.05);border-radius:20px;border:1px solid rgba(255,255,255,.1)">
-<p style="font-size:1.2rem;color:var(--a);font-weight:700"><i class="fas fa-truck"></i> ?? ??????? ????? ?????? ????? ?????????</p>
-</div>
+<div class="badge" style="margin-top:40px">يوجد شحن لجميع المحافظات</div>
 </section>
 
 <div class="ov" id="ov" onclick="tc()"></div>
 <div class="cartS" id="cart">
-<div class="ch"><h2><i class="fas fa-shopping-bag"></i> ??? ?????????</h2><button class="close" onclick="tc()"><i class="fas fa-times"></i></button></div>
+<div class="ch"><h2><i class="fas fa-shopping-bag"></i> سلة المشتريات</h2><button class="close" onclick="tc()"><i class="fas fa-times"></i></button></div>
 <div class="ci" id="ci"></div>
-<div class="cf"><div class="ct"><span>????????:</span><span id="ct">0 ?.?</span></div>
-<button class="co" onclick="out()"><i class="fab fa-whatsapp"></i> ????? ????? ??? ??????</button></div>
+<div class="cf"><div class="ct"><span>الإجمالي:</span><span id="ct">0 ج.م</span></div>
+<button class="co" onclick="out()"><i class="fab fa-whatsapp"></i> إتمام الطلب عبر واتساب</button></div>
 </div>
 
-<div class="adm"><button class="adb" onclick="ol()" title="?????? ???"><i class="fas fa-lock"></i></button></div>
+<div class="adm"><button class="adb" onclick="ol()" title="للمالك فقط"><i class="fas fa-lock"></i></button></div>
 
 <div class="am" id="am"><div class="ac">
-<h2><i class="fas fa-plus-circle"></i> ????? ????</h2>
-<div class="fg"><label>??? ??????</label><input type="text" id="pn" placeholder="????: ?????? ????"></div>
-<div class="fg"><label>????? (?.?)</label><input type="number" id="pp" placeholder="250"></div>
-<div class="fg"><label>?????</label><select id="pc"><option value="men">?????</option><option value="women">?????</option><option value="boys">?????</option><option value="girls">????</option></select></div>
-<div class="fg"><label>??????? ??????? (???? ????? ??????)</label><input type="text" id="pcolors" placeholder="????: ????, ????, ????, ????"></div>
-<div class="fg"><label>???????? ??????? (???? ????? ??????)</label><input type="text" id="psizes" placeholder="????: S, M, L, XL, XXL"></div>
-<div class="fg"><label>???? ??????</label><input type="text" id="pi" placeholder="???? ??????"></div>
-<div class="fg"><label>?? ???? ????</label><input type="file" id="pf" accept="image/*" onchange="pr(this)"></div>
-<button class="sb" onclick="ap()"><i class="fas fa-save"></i> ???</button>
+<h2><i class="fas fa-plus-circle"></i> إضافة منتج</h2>
+<div class="fg"><label>اسم المنتج</label><input type="text" id="pn" placeholder="مثال: تيشيرت قطني"></div>
+<div class="fg"><label>السعر (ج.م)</label><input type="number" id="pp" placeholder="250"></div>
+<div class="fg"><label>الفئة</label><select id="pc"><option value="men">رجالي</option><option value="women">حريمي</option><option value="boys">أولاد</option><option value="girls">بنات</option></select></div>
+<div class="fg"><label>الألوان المتاحة</label>
+<div class="color-inputs">
+<input type="color" id="c1" value="#000000">
+<input type="color" id="c2" value="#ffffff">
+<input type="color" id="c3" value="#ff0000">
+<input type="color" id="c4" value="#0000ff">
+<input type="color" id="c5" value="#00ff00">
+</div>
+</div>
+<div class="fg"><label>المقاسات المتاحة (افصل بينهم بفاصلة)</label><input type="text" id="ps" placeholder="S, M, L, XL, XXL, 3XL"></div>
+<div class="fg"><label>رابط الصورة</label><input type="text" id="pi" placeholder="رابط الصورة"></div>
+<div class="fg"><label>أو ارفع صورة</label><input type="file" id="pf" accept="image/*" onchange="pr(this)"></div>
+<button class="sb" onclick="ap()"><i class="fas fa-save"></i> حفظ</button>
+
+<div class="manage-section" id="manageSection" style="display:none">
+<h3><i class="fas fa-cog"></i> إدارة المنتجات</h3>
+<table class="manage-table">
+<thead><tr><th>المنتج</th><th>السعر</th><th>الفئة</th><th>حذف</th></tr></thead>
+<tbody id="manageBody"></tbody>
+</table>
+</div>
 </div></div>
 
 <div class="toast" id="toast"></div>
 
 <footer><div class="fc">
-<div class="fs"><h3>?? Pink & Blue</h3><p>???? ????? ?? ??? ???? ????? ?????? ??????? ???????.</p></div>
-<div class="fs"><h3>????? ????</h3><a href="tel:01508234015" class="fp"><i class="fas fa-phone"></i> 01508234015</a></div>
-<div class="fs"><h3>????? ?????</h3><p>?? ????? ??????<br>10 ? - 10 ?</p></div>
-</div><div class="fb"><p>� 2026 Pink & Blue</p></div></footer>
-
+<div class="fs"><h3>عن Pink &amp; Blue</h3><p>متجر متخصص في بيع أحدث صيحات الموضة للعائلة بأكملها.</p></div>
+<div class="fs"><h3>تواصل معنا</h3><a href="tel:01508234015" class="fp"><i class="fas fa-phone"></i> 01508234015</a></div>
+<div class="fs"><h3>ساعات العمل</h3><p>من السبت للخميس<br>10 ص - 10 م</p></div>
+</div><div class="fb"><p>2026 Pink &amp; Blue</p></div></footer>
 <script>
-const P="pinkblue2026";let L=false;
-let products=[{id:1,n:"?????? ???? ?????",p:350,c:"men",i:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400",b:"????",colors:"????, ????, ????",sizes:"M, L, XL, XXL"},{id:2,n:"???? ??????",p:450,c:"men",i:"https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400",b:"???",colors:"????, ????",sizes:"S, M, L, XL"},{id:3,n:"?????? ????",p:550,c:"men",i:"https://images.unsplash.com/photo-1542272454315-4c01d7abdf4a?w=400",colors:"???? ????, ???? ????",sizes:"30, 32, 34, 36"},{id:4,n:"????? ????",p:650,c:"women",i:"https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400",b:"?????? ??????",colors:"????, ????, ????",sizes:"S, M, L"},{id:5,n:"????? ?????",p:380,c:"women",i:"https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=400",colors:"????, ????, ???",sizes:"S, M, L, XL"},{id:6,n:"????? ????",p:420,c:"women",i:"https://images.unsplash.com/photo-1583496661160-fb5886a0uj7f?w=400",b:"????",colors:"????",sizes:"S, M, L"},{id:7,n:"?????? ?????",p:180,c:"boys",i:"https://images.unsplash.com/photo-1519278407-7e5f4b54cc6a?w=400",colors:"????, ????, ????, ????",sizes:"4-5, 6-7, 8-9, 10-11"},{id:8,n:"???? ?????",p:220,c:"boys",i:"https://images.unsplash.com/photo-1519457431-44ccd64a579b?w=400",b:"???",colors:"????, ?????, ????",sizes:"4-5, 6-7, 8-9, 10-11"},{id:9,n:"????? ?????",p:290,c:"girls",i:"https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=400",colors:"????, ??????, ????",sizes:"4-5, 6-7, 8-9, 10-11"},{id:10,n:"????? ?????",p:240,c:"girls",i:"https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=400",b:"????",colors:"????, ???? ????",sizes:"4-5, 6-7, 8-9, 10-11"},{id:11,n:"????? ?????",p:750,c:"men",i:"https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400",colors:"????, ???, ????",sizes:"M, L, XL, XXL"},{id:12,n:"????? ?????",p:850,c:"women",i:"https://images.unsplash.com/photo-1590736969955-71cc94901144?w=400",b:"????",colors:"????, ????, ???",sizes:"M, L, XL"}];
-let cart=[],cur='all',up=null;
+const P="pinkblue2026";
+var L=false;
+var products=[
+{id:1,n:"تيشيرت بولو رجالي",p:350,c:"men",i:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400",b:"جديد",colors:["#000000","#ffffff","#1a237e"],sizes:["M","L","XL","2XL"]},
+{id:2,n:"قميص كلاسيك",p:450,c:"men",i:"https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400",b:"عرض",colors:["#ffffff","#c0c0c0","#000080"],sizes:["S","M","L","XL"]},
+{id:3,n:"بنطلون جينز",p:550,c:"men",i:"https://images.unsplash.com/photo-1542272454315-4c01d7abdf4a?w=400",colors:["#1565c0","#424242"],sizes:["30","32","34","36","38"]},
+{id:4,n:"فستان صيفي",p:650,c:"women",i:"https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400",b:"الأكثر مبيعاً",colors:["#e91e63","#ffeb3b","#4caf50"],sizes:["S","M","L","XL"]},
+{id:5,n:"بلوزة أنيقة",p:380,c:"women",i:"https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=400",colors:["#ffffff","#f8bbd0","#e1bee7"],sizes:["S","M","L"]},
+{id:6,n:"تنورة جينز",p:420,c:"women",i:"https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=400",b:"جديد",colors:["#1565c0","#000000"],sizes:["S","M","L","XL"]},
+{id:7,n:"تيشيرت أولاد",p:180,c:"boys",i:"https://images.unsplash.com/photo-1519278407-7e5f4b54cc6a?w=400",colors:["#ff5722","#2196f3","#4caf50"],sizes:["4-6","8-10","12-14"]},
+{id:8,n:"شورت رياضي",p:220,c:"boys",i:"https://images.unsplash.com/photo-1519457431-44ccd64a579b?w=400",b:"عرض",colors:["#000000","#424242","#1565c0"],sizes:["4-6","8-10","12-14","16"]},
+{id:9,n:"فستان بناتي",p:290,c:"girls",i:"https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=400",colors:["#e91e63","#ffeb3b","#9c27b0"],sizes:["4-6","8-10","12-14"]},
+{id:10,n:"تنورة بناتي",p:240,c:"girls",i:"https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=400",b:"جديد",colors:["#ff9800","#e91e63","#2196f3"],sizes:["4-6","8-10","12-14"]},
+{id:11,n:"جاكيت رجالي",p:750,c:"men",i:"https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400",colors:["#000000","#3e2723","#1a237e"],sizes:["M","L","XL","2XL"]},
+{id:12,n:"عباية حريمي",p:850,c:"women",i:"https://images.unsplash.com/photo-1590736969955-71cc94901144?w=400",b:"مميز",colors:["#000000","#424242","#1a237e"],sizes:["S","M","L","XL","2XL"]}
+];
+
+var cart=[],cur='all',up=null;
 
 function r(){
-const g=document.getElementById('grid');
-const d=cur==='all'?products:products.filter(x=>x.c===cur);
-g.innerHTML=d.map(x=>{
-let details='';
-if(x.colors) details+='<span><i class="fas fa-palette"></i> '+x.colors.split(',').slice(0,3).join(', ')+(x.colors.split(',').length>3?'...':'')+'</span>';
-if(x.sizes) details+='<span><i class="fas fa-ruler"></i> '+x.sizes.split(',').slice(0,3).join(', ')+(x.sizes.split(',').length>3?'...':'')+'</span>';
-return `<div class="card"><span class="badge2">${x.b||''}</span><img src="${x.i}" class="cimg" onerror="this.src='https://via.placeholder.com/400x300?text=${encodeURIComponent(x.n)}'"><div class="cinfo"><div class="cn">${x.n}</div><div class="cdetails">${details}</div><div class="cp">${x.p} ?.?</div><button class="add" onclick="ac(${x.id})"><i class="fas fa-cart-plus"></i> ??? ?????</button></div></div>`;
+var g=document.getElementById('grid');
+var d=cur==='all'?products:products.filter(function(x){return x.c===cur;});
+g.innerHTML=d.map(function(x){
+var colorsHtml='';
+if(x.colors && x.colors.length>0){
+colorsHtml='<div class="colors"><span class="cl-label">الألوان:</span>'+x.colors.map(function(c){return '<span class="color-dot" style="background:'+c+';border-color:'+c+'" title="'+c+'"></span>';}).join('')+'</div>';
+}
+var sizesHtml='';
+if(x.sizes && x.sizes.length>0){
+sizesHtml='<div class="sizes"><span class="sz-label">المقاسات:</span>'+x.sizes.map(function(s){return '<span class="size-tag">'+s+'</span>';}).join('')+'</div>';
+}
+var delBtn=L?'<button class="del-btn" onclick="dp('+x.id+',event)" title="حذف المنتج"><i class="fas fa-trash"></i></button>':'';
+return '<div class="card">'+delBtn+'<span class="badge2">'+(x.b||'')+'</span><img src="'+x.i+'" class="cimg" onerror="this.src='https://via.placeholder.com/400x300?text='+encodeURIComponent(x.n)+''"><div class="cinfo"><div class="cn">'+x.n+'</div><div class="cp">'+x.p+' ج.م</div>'+colorsHtml+sizesHtml+'<div class="shipping-info"><i class="fas fa-shipping-fast"></i> يوجد شحن لجميع المحافظات</div><button class="add" onclick="ac('+x.id+')"><i class="fas fa-cart-plus"></i> أضف للسلة</button></div></div>';
 }).join('');
 }
 
-function f(c){cur=c;document.querySelectorAll('.tab').forEach(t=>{t.classList.toggle('active',(c==='all'&&t.textContent==='????')||(c==='men'&&t.textContent==='?????')||(c==='women'&&t.textContent==='?????')||(c==='boys'&&t.textContent==='?????')||(c==='girls'&&t.textContent==='????'));});r();}
+function f(c){cur=c;var tabs=document.querySelectorAll('.tab');tabs.forEach(function(t){t.classList.toggle('active',(c==='all'&&t.textContent==='الكل')||(c==='men'&&t.textContent==='رجالي')||(c==='women'&&t.textContent==='حريمي')||(c==='boys'&&t.textContent==='أولاد')||(c==='girls'&&t.textContent==='بنات'));});r();}
 
 function ac(id){
-const x=products.find(p=>p.id===id);
-const e=cart.find(i=>i.id===id);
-if(e)e.q++;else cart.push({...x,q:1});
-uc();t(`? ?? ????? "${x.n}"`);
-const b=event.target.closest('.add');
-b.innerHTML='<i class="fas fa-check"></i> ??? ???????';b.classList.add('added');
-setTimeout(()=>{b.innerHTML='<i class="fas fa-cart-plus"></i> ??? ?????';b.classList.remove('added');},1500);
+var x=products.find(function(p){return p.id===id;});
+var e=cart.find(function(i){return i.id===id;});
+if(e)e.q++;else cart.push(Object.assign({},x,{q:1}));
+uc();t('تم إضافة "'+x.n+'"');
+var b=event.target.closest('.add');
+b.innerHTML='<i class="fas fa-check"></i> تمت الإضافة';b.classList.add('added');
+setTimeout(function(){b.innerHTML='<i class="fas fa-cart-plus"></i> أضف للسلة';b.classList.remove('added');},1500);
 }
 
 function uc(){
-const n=cart.reduce((s,i)=>s+i.q,0);
+var n=cart.reduce(function(s,i){return s+i.q;},0);
 document.getElementById('cc').textContent=n;
-const ci=document.getElementById('ci');
-if(cart.length===0){ci.innerHTML='<div class="empty"><i class="fas fa-shopping-basket"></i><h3>????? ?????</h3><p>???? ??????</p></div>';}
-else{ci.innerHTML=cart.map(i=>{
-let details='';
-if(i.colors) details+='<div style="font-size:.8rem;color:rgba(255,255,255,.5)"><i class="fas fa-palette"></i> '+i.colors+'</div>';
-if(i.sizes) details+='<div style="font-size:.8rem;color:rgba(255,255,255,.5)"><i class="fas fa-ruler"></i> '+i.sizes+'</div>';
-return `<div class="citem"><img src="${i.i}" onerror="this.src='https://via.placeholder.com/80?text=${encodeURIComponent(i.n)}'"><div class="cin"><div class="cname">${i.n}</div><div class="cprice">${i.p} ?.? � ${i.q}</div>${details}</div><button class="rem" onclick="rc(${i.id})"><i class="fas fa-trash"></i></button></div>`;
-}).join('');}
-const to=cart.reduce((s,i)=>s+(i.p*i.q),0);
-document.getElementById('ct').textContent=to+' ?.?';
+var ci=document.getElementById('ci');
+if(cart.length===0){ci.innerHTML='<div class="empty"><i class="fas fa-shopping-basket"></i><h3>السلة فارغة</h3><p>ابدأ التسوق</p></div>';}
+else{ci.innerHTML=cart.map(function(i){return '<div class="citem"><img src="'+i.i+'" onerror="this.src='https://via.placeholder.com/80?text='+encodeURIComponent(i.n)+''"><div class="cin"><div class="cname">'+i.n+'</div><div class="cprice">'+i.p+' ج.م × '+i.q+'</div></div><button class="rem" onclick="rc('+i.id+')"><i class="fas fa-trash"></i></button></div>';}).join('');}
+var to=cart.reduce(function(s,i){return s+(i.p*i.q);},0);
+document.getElementById('ct').textContent=to+' ج.م';
 localStorage.setItem('cart',JSON.stringify(cart));
 }
 
-function rc(id){cart=cart.filter(i=>i.id!==id);uc();t('? ?? ?????');}
+function rc(id){cart=cart.filter(function(i){return i.id!==id;});uc();t('تم الحذف');}
 function tc(){document.getElementById('cart').classList.toggle('open');document.getElementById('ov').classList.toggle('active');}
 
 function out(){
-if(cart.length===0){t('?? ????? ?????!');return;}
-let m='?? *??? ???? ?? Pink & Blue*\\n\\n';
-cart.forEach(i=>{m+=`� ${i.n} - ${i.p} ?.? � ${i.q}`;if(i.colors)m+=`\\n  ???????: ${i.colors}`;if(i.sizes)m+=`\\n  ????????: ${i.sizes}`;m+='\\n';});const to=cart.reduce((s,i)=>s+(i.p*i.q),0);
-m+=`\\n?? *????????: ${to} ?.?*\\n\\n?? ???? ??????? ?????? ?????`;
-window.open(`https://wa.me/201508234015?text=${encodeURIComponent(m)}`,'_blank');
+if(cart.length===0){t('السلة فارغة!');return;}
+var m='طلب جديد من Pink & Blue
+
+';
+cart.forEach(function(i){m+='• '+i.n+' - '+i.p+' ج.م × '+i.q+'
+';});
+var to=cart.reduce(function(s,i){return s+(i.p*i.q);},0);
+m+='
+الإجمالي: '+to+' ج.م
+
+يرجى التواصل لتأكيد الطلب';
+window.open('https://wa.me/201508234015?text='+encodeURIComponent(m),'_blank');
 }
 
 function ol(){document.getElementById('lg').classList.add('active');document.getElementById('pw').focus();}
 function cl(){document.getElementById('lg').classList.remove('active');document.getElementById('er').classList.remove('show');document.getElementById('pw').value='';}
-function ck(){const i=document.getElementById('pw').value;if(i===P){L=true;cl();document.getElementById('am').classList.add('active');t('? ?? ??????!');}else{document.getElementById('er').classList.add('show');document.getElementById('pw').value='';document.getElementById('pw').focus();}}
-
-function ta(){document.getElementById('am').classList.toggle('active');}
-function pr(input){if(input.files&&input.files[0]){const r=new FileReader();r.onload=function(e){up=e.target.result;};r.readAsDataURL(input.files[0]);}}
-
-function ap(){
-const n=document.getElementById('pn').value;
-const p=parseFloat(document.getElementById('pp').value);
-const c=document.getElementById('pc').value;
-const colors=document.getElementById('pcolors').value;
-const sizes=document.getElementById('psizes').value;
-const i=document.getElementById('pi').value;
-if(!n||!p){t('?? ???? ??? ???? ??????');return;}
-products.push({id:Date.now(),n:n,p:p,c:c,i:up||i||`https://via.placeholder.com/400x300?text=${encodeURIComponent(n)}`,colors:colors,sizes:sizes});
-r();ta();t('? ?? ???????!');
-document.getElementById('pn').value='';document.getElementById('pp').value='';document.getElementById('pi').value='';document.getElementById('pf').value='';document.getElementById('pcolors').value='';document.getElementById('psizes').value='';up=null;
+function ck(){
+var i=document.getElementById('pw').value;
+if(i===P){L=true;cl();document.getElementById('am').classList.add('active');t('تم الدخول!');rm();}
+else{document.getElementById('er').classList.add('show');document.getElementById('pw').value='';document.getElementById('pw').focus();}
 }
 
-function t(m){const x=document.getElementById('toast');x.textContent=m;x.classList.add('show');setTimeout(()=>x.classList.remove('show'),3000);}
+function ta(){document.getElementById('am').classList.toggle('active');}
+function pr(input){if(input.files&&input.files[0]){var r=new FileReader();r.onload=function(e){up=e.target.result;};r.readAsDataURL(input.files[0]);}}
 
-const s=localStorage.getItem('cart');if(s){cart=JSON.parse(s);uc();}
+function ap(){
+var n=document.getElementById('pn').value;
+var p=parseFloat(document.getElementById('pp').value);
+var c=document.getElementById('pc').value;
+var i=document.getElementById('pi').value;
+var s=document.getElementById('ps').value;
+if(!n||!p){t('يرجى ملء جميع الحقول');return;}
+var colors=[];
+for(var j=1;j<=5;j++){var v=document.getElementById('c'+j).value;if(v)colors.push(v);}
+var sizes=s?s.split(',').map(function(x){return x.trim();}).filter(function(x){return x;}):[];
+products.push({id:Date.now(),n:n,p:p,c:c,i:up||i||'https://via.placeholder.com/400x300?text='+encodeURIComponent(n),colors:colors,sizes:sizes});
+r();rm();t('تم الإضافة!');
+document.getElementById('pn').value='';document.getElementById('pp').value='';document.getElementById('pi').value='';document.getElementById('pf').value='';document.getElementById('ps').value='';up=null;
+}
+
+function dp(id,event){
+event.stopPropagation();
+if(!confirm('هل أنت متأكد من حذف هذا المنتج؟'))return;
+products=products.filter(function(p){return p.id!==id;});
+cart=cart.filter(function(i){return i.id!==id;});
+uc();r();rm();t('تم حذف المنتج');
+}
+
+function rm(){
+if(!L)return;
+var sec=document.getElementById('manageSection');
+var body=document.getElementById('manageBody');
+sec.style.display='block';
+body.innerHTML=products.map(function(x){return '<tr><td>'+x.n+'</td><td>'+x.p+' ج.م</td><td>'+(x.c==='men'?'رجالي':x.c==='women'?'حريمي':x.c==='boys'?'أولاد':'بنات')+'</td><td><button class="manage-btn del" onclick="dp('+x.id+',event)"><i class="fas fa-trash"></i> حذف</button></td></tr>';}).join('');
+}
+
+function t(m){var x=document.getElementById('toast');x.textContent=m;x.classList.add('show');setTimeout(function(){x.classList.remove('show');},3000);}
+
+var s=localStorage.getItem('cart');if(s){cart=JSON.parse(s);uc();}
 r();
 </script>
 </body>
